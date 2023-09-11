@@ -5,15 +5,12 @@ import java.util.Map;
 public class Game {
 
     private final String name;
-    private Map<Action, List<Achievement>> achievements;
 
-    public Game(String name, Map<Action, List<Achievement>> achievements) {
-        this.name = name;
+    private Map<Action,List<Achievement>> achievements;
+
+    public Game(String name,Map<Action, List<Achievement>> achievements) {
+        this.name=name;
         this.achievements = achievements;
-    }
-
-    public String getName() {
-        return this.name;
     }
 
     public List<Achievement> getAllAchievements() {
